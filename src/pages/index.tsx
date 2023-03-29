@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
+import Link from 'next/link'
 import { signOut, useSession } from 'next-auth/react'
-import Card from '../components/Card'
+import CardList from '../components/Card/CardList'
+
 const Home: NextPage = () => {
   const { data: session, status } = useSession()
 
@@ -18,11 +20,7 @@ const Home: NextPage = () => {
   return (
     <>
       <a href="/auth/signin">Sign in</a>
-      <Card
-        title="My first exibition"
-        imageSrc="https://images.unsplash.com/photo-1548618771-dfd3f73251b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80"
-        description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable"
-      />
+      <Link href="/feed">Feed Page</Link>
     </>
   )
 }
