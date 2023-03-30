@@ -28,8 +28,8 @@ const CardItem: React.FC<CardProps> = ({
         />
       </div>
       <div className="p-4 leading-normal flex flex-col overflow-auto">
-        <div className="flex flex-row justify-between">
-          <h2 className="mb-2 text-xl font-bold tracking-tight text-white">
+        <div className="flex flex-row justify-between items-center">
+          <h2 className="mb-2 text-lg font-bold tracking-tight text-white">
             {title}
           </h2>
           {/* <BsBookmark color="white" size={20} /> */}
@@ -38,12 +38,9 @@ const CardItem: React.FC<CardProps> = ({
             setIsBookmarked={setIsBookmarked}
           />
         </div>
-        <p className="mb-3 font-normal text-gray-100 line-clamp-5">
+        <p className="my-3 font-normal text-md text-gray-100 tracking-tight line-clamp-5 hover:line-clamp-none">
           {description}
         </p>
-        {description.length > 240 && (
-          <p className="text-sky-400">Read more...</p>
-        )}
       </div>
     </div>
   )

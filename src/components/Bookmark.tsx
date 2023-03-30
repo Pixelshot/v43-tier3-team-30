@@ -20,7 +20,7 @@ const BookmarkButton = ({
     <button
       type="button"
       onClick={handleButtonClick}
-      className="inline-flex items-center px-2 py-1 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-400 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+      className="inline-flex items-center p-2 my-auto border border-transparent text-xs font-medium rounded-md text-white bg-yellow-400 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
     >
       {isBookmarked ? (
         <BsBookmarksFill className="mr-1.5 h-5 w-5 text-blue-900" />
