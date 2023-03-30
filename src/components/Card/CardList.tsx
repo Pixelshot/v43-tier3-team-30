@@ -10,7 +10,7 @@ interface CardProps {
 
 const CardList: React.FC<CardProps> = ({ title, imageSrc, description }) => {
   return (
-    <div className="grid grid-flow-cols gap-4">
+    <div>
       <CardItem title={title} imageSrc={imageSrc} description={description} />
     </div>
   )
